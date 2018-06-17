@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-MAINTAINER Jeremy Coatelen <dash0@protonmail.com>
+MAINTAINER John Arevalo <johnarevalo@gmail.com>
 
 # Pick up some TF dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -32,6 +32,7 @@ RUN pip3 --no-cache-dir install \
         sklearn \
         pandas \
         Pillow \
+        plotly \
         && \
     python3 -m ipykernel.kernelspec
 
