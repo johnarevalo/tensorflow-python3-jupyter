@@ -33,6 +33,8 @@ RUN pip3 --no-cache-dir install \
         pandas \
         Pillow \
         plotly \
+        keras \
+        cufflinks \
         && \
     python3 -m ipykernel.kernelspec
 
