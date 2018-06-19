@@ -71,4 +71,4 @@ WORKDIR "/notebooks"
 
 RUN chmod +x /run_jupyter.sh
 
-CMD ["/run_jupyter.sh", "--allow-root"]
+CMD ["/run_jupyter.sh", "--allow-root", "--NotebookApp.iopub_data_rate_limit=10000000000"]
